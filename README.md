@@ -1,27 +1,57 @@
 # NgAlert
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+Simple Alert module for Angular version 2 and above.
 
-## Development server
+## Install
+`
+npm install ng-alert --save
+`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+1. Import `NgAlertModule` in your `AppModule`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+``` typescript
+@NgModule({
+  imports: [
+    NgAlertModule  // <-- import NgAlertModule in your app module
+  ],
+  declarations: [...],
+  providers: [...]
+})
+export class NgAlertModule { }
 
-## Build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+2. In your component :
 
-## Running unit tests
+``` typescript
+import { Component } from '@angular/core';
+import { AlertService } from 'ng-alert';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@Component({
+  selector: 'app-component',
+  template: `
+    <ng-alert></ng-alert>  <-- Insert ng-alert directive in your html template
+    <p>App works!</p>
+  `,
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent  {
 
-## Running end-to-end tests
+  constructor(private alertService: AlertService) {
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+      // this line will push new success alert to alerts array
+      this.alertService.success('Your alert message goes here','The title', true);
+
+   }
+
+}
+
+```
+
+
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the ng-alert contact me.
