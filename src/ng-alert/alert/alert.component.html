@@ -1,0 +1,6 @@
+
+<div class="alert alert-success fade in" *ngFor="let alert of alerts">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close" (click)="remove(alert)" *ngIf="alert.hasCloseButton">×</a>
+  <strong *ngIf="alert.title">{{alert.title}}</strong> 
+  <span> {{alert.message}} </span>
+</div>
