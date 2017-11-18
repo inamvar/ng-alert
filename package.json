@@ -3,10 +3,8 @@
   "version": "1.0.0-alpha",
   "license": "MIT",
   "author": "Iman Namvar",
-  "scripts": {
-  },
-  "private": false
-,
+  "scripts": {},
+  "private": false,
   "devDependencies": {
     "@angular/cli": "1.5.0",
     "@angular/compiler-cli": "^5.0.0",
@@ -15,5 +13,25 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  }
+  },
+  "description": "Simple Alert module for Angular version 2 and above.",
+  "main": "index.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inamvar/ng-alert.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "alert",
+    "module",
+    "ng-alert",
+    "NgAlert",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/inamvar/ng-alert/issues"
+  },
+  "homepage": "https://github.com/inamvar/ng-alert#readme"
 }

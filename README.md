@@ -19,7 +19,7 @@ npm install ng-alert --save
   declarations: [...],
   providers: [...]
 })
-export class NgAlertModule { }
+export class NgAppModule { }
 
 ```
 
